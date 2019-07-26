@@ -1,0 +1,70 @@
+[global_config]
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  focus = system
+  title_transmit_bg_color = "#002b36"
+  always_split_with_profile = True
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = solarized-dark
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.9
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = DroidSansMono Nerd Font 14 
+    scrollback_infinite = True
+    scrollback_lines = 50000
+    use_system_font = False
+  [[AdventureTime]]
+    background_color = "#1f1d45"
+    background_darkness = 0.89
+    background_type = transparent
+    cursor_color = "#efbf38"
+    font = DroidSansMono Nerd Font 14 
+    foreground_color = "#f8dcc0"
+    palette = "#050404:#bd0013:#4ab118:#e7741e:#0f4ac6:#665993:#70a598:#f8dcc0:#4e7cbf:#fc5f5a:#9eff6e:#efc11a:#1997c6:#9b5953:#c8faf4:#f6f5fb"
+    use_system_font = False
+  [[Belafonte Day]]
+    background_color = "#d5ccba"
+    background_darkness = 0.92
+    background_type = transparent
+    cursor_color = "#45373c"
+    font = DroidSansMono Nerd Font 14 
+    foreground_color = "#45373c"
+    palette = "#20111b:#be100e:#858162:#eaa549:#426a79:#97522c:#989a9c:#968c83:#5e5252:#be100e:#858162:#eaa549:#426a79:#97522c:#989a9c:#d5ccba"
+    use_system_font = False
+  [[Teerb]]
+    background_color = "#262626"
+    background_darkness = 0.94
+    background_type = transparent
+    cursor_color = "#e4c9af"
+    font = DroidSansMono Nerd Font 14 
+    foreground_color = "#d0d0d0"
+    palette = "#1c1c1c:#d68686:#aed686:#d7af87:#86aed6:#d6aed6:#8adbb4:#d0d0d0:#1c1c1c:#d68686:#aed686:#e4c9af:#86aed6:#d6aed6:#b1e7dd:#efefef"
+    use_system_font = False
+  [[solarized-dark]]
+    background_color = "#002b36"
+    background_darkness = 0.7
+    background_type = transparent
+    cursor_color = "#eee8d5"
+    font = DroidSansMono Nerd Font 14 
+    foreground_color = "#eee8d5"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#586e75:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    use_system_font = False
+  [[solarized-light]]
+    background_color = "#eee8d5"
+    background_darkness = 0.9
+    background_type = transparent
+    cursor_color = "#003b36"
+    font = DroidSansMono Nerd Font 14 
+    foreground_color = "#002b36"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    use_system_font = False
