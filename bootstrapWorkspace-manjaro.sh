@@ -24,8 +24,8 @@ rm -rf yay
 # Install wget and curl
 pacman -S wget curl --noconfirm
 
-# Install Git and gitflow-avh
-pacman -S git --noconfirm
+# Install git, gitg and gitflow-avh
+pacman -S git gitg --noconfirm
 sudo -H -u $USER yay -S gitflow-avh --noconfirm
 
 # Install tmux and tmux-xpanes
