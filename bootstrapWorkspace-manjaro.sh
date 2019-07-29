@@ -85,6 +85,11 @@ mkdir -p ~/.vim/dirs/tmp ~/.vim/dirs/backups ~/.vim/dirs/undos
 vim +PlugInstall +qall
 '
 
+# set difftool to vimdiff
+git config --global diff.tool vimdiff
+git config --global difftool.prompt false
+git config --global alias.d difftool
+
 # Install Pyenv
 sudo -H -u $USER sh -c '
 curl https://pyenv.run | bash
