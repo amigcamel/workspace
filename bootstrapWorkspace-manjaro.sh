@@ -35,6 +35,9 @@ sudo -H -u $USER yay -S tmux-xpanes --noconfirm
 # Install direnv
 yay -S direnv --noconfirm
 
+# Install tree
+pacman -S tree --noconfirm
+
 # Install zsh
 pacman -S zsh --noconfirm
 
