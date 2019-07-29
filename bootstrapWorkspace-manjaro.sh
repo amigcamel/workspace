@@ -32,6 +32,9 @@ sudo -H -u $USER yay -S gitflow-avh --noconfirm
 pacman -S tmux --noconfirm
 sudo -H -u $USER yay -S tmux-xpanes --noconfirm
 
+# Install direnv
+yay -S direnv --noconfirm
+
 # Install zsh
 pacman -S zsh --noconfirm
 
