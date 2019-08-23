@@ -15,6 +15,7 @@ fi
 yes | pacman -Syu
 
 # Install yay
+pacman -S base-devel binutils make --noconfirm
 sudo -H -u $USER sh -c '  
 git clone https://aur.archlinux.org/yay.git
 (cd yay && makepkg -si --noconfirm)
@@ -33,7 +34,7 @@ pacman -S tmux --noconfirm
 sudo -H -u $USER yay -S tmux-xpanes --noconfirm
 
 # Install direnv
-yay -S direnv --noconfirm
+sudo -H -u $USER yay -S direnv --noconfirm
 
 # Install tree
 pacman -S tree --noconfirm
@@ -121,6 +122,7 @@ pacman -S sshuttle --noconfirm
 # Install virtualbox and vagrant 
 pacman -S virtualbox --noconfirm
 pacman -S linux$(uname -r | cut -d . -f 1-2 | sed 's/\.//')-virtualbox-host-modules --noconfirm
+pacman -S vagrant --noconfirm
 
 # Install monitoring tools
 pacman -S htop bmon glances --noconfirm
@@ -141,7 +143,7 @@ systemctl start docker
 usermod -aG docker $USER
 
 # Install Dbeaver
-yay -S dbeaver --noconfirm
+sudo -H -u $USER yay -S dbeaver --noconfirm
 
 # DONE
 echo "All done, please restart your computer now!"
